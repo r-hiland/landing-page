@@ -1,11 +1,56 @@
 /* Have fun. This is your site. */
 
-body {
-  background: lightgray;
+HTML body {
+  background: #1f1d18;
+
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #e9f5ff;
 }
 
 h1 {
-  text-align: center;
+  font-weight: 400;
+  text-align: left;
+  color: #e9f5ff; 
+
+  text-shadow:
+  0 0 1px #009dc4,
+  0 0 2px #009dc4,
+  0 0 2px #009dc4,
+  0 0 2px #009dc4,
+  0 0 3px #009dc4,
+  0 0 3px #009dc4,
+  0 0 2px #009dc4;
+
+  padding-top: 0.34em;
+  margin-top: 0;
+
+  text-transform: uppercase;
+}
+
+.titlebutton {
+  font-weight: 600;
+  color: #f5efff;
+  font-size: 1em;
+
+
+  /* no underline */
+  text-decoration: none;
+
+
+}
+
+.titlebutton:hover {
+  color: #f5efff;
+  text-shadow:
+  0 0 1px #4500c4,
+  0 0 2px #4500c4,
+  0 0 2px #4500c4,
+  0 0 2px #4500c4,
+  0 0 3px #4500c4,
+  0 0 3px #4500c4,
+  0 0 2px #5900ff;
 }
 
 /* Main Container */
@@ -15,6 +60,72 @@ main {
   margin-inline: auto;
   
   /* adjust to your design */
-  max-width: 40em;
+  /* max-width: 40em; */
 
+}
+
+.hero {
+  background-color: #0e0e0d;
+  background-image: url('lakevalhala2-tmp.png');
+
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+
+
+  background-position: center;
+
+  background-size: cover;
+  height: 20em;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+
+
+  position: relative; z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.titlebar {
+  height: 3em;
+  padding: 0%;
+
+  display: flex;
+  justify-content: left;
+
+  width: 100%;
+  
+}
+
+
+img {
+  border-radius: 50%;
+  scale: 50%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+  border: 3px solid #e9a0ff;
+  box-shadow: 
+  0 0 1em #7c00c4,
+  0 0 6em #7c00c4;
+
+}
+
+a {
+  color: #f5efff;
+}
+
+a:hover {
+  color: #f5efff;
+  text-shadow:
+  0 0 1px #009dc4,
+  0 0 2px #009dc4,
+  0 0 2px #009dc4,
+  0 0 2px #009dc4,
+  0 0 3px #009dc4,
+  0 0 3px #009dc4,
+  0 0 2px #009dc4;
 }
