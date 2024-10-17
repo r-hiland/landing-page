@@ -4,6 +4,10 @@ body {
   background: lightgray;
 }
 
+h1 {
+  text-align: center;
+}
+
 /* Main Container */
 main {
   width: 100%;
