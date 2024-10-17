@@ -23,6 +23,7 @@ h1 {
   0 0 3px #009dc4,
   0 0 2px #009dc4;
 
+
   padding-top: 0.34em;
   margin-top: 0;
 
@@ -107,11 +108,14 @@ img {
   margin-right: auto;
 
   
-  border: 3px solid #e9a0ff;
-  box-shadow: 
+  border: 3px solid #ceaaf0;
+  /* box-shadow: 
   0 0 1em #7c00c4,
-  0 0 6em #7c00c4;
+  0 0 6em #7c00c4; */
 
+/* box shadow with 2px offset to the bottom left */
+box-shadow: 1.5em -1.5em 4em #0023e654, -1.5em 1.5em 4em #de00e654;
+  
 }
 
 a {
