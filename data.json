@@ -11,6 +11,10 @@
     {
     "name": "LinkedIn",
     "url": "https://www.linkedin.com/in/wendel-hiland/"
-    }
+    },
+    {
+        "name": "Contact",
+        "url": "mailto:reed@hiland.dev"
+        }
     ]
 }
