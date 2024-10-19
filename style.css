@@ -1,8 +1,12 @@
 /* Have fun. This is your site. */
 
 HTML body {
-/* background: #1f1d18; */
+background: #848495;
 background-image: url('img/wallpaper.png');
+background-size: 100% auto;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: bottom;
 
   font-family: "Rajdhani", sans-serif;
   font-weight: 300;
