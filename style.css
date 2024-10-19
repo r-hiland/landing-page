@@ -467,11 +467,14 @@ h2 {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.90);
+  /* background: #1a2226dc; */
   color: white;
-  padding: 20px;
+  padding: 0em;
   box-sizing: border-box;
   z-index: 1000;
+
+  padding-top: 0.5em;
 }
 
 #toggle {
