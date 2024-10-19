@@ -1,14 +1,12 @@
 /* Have fun. This is your site. */
-#mobile-menu-button {
-  display: none;
-}
+
 
 HTML body {
-background: #1a2226;
+  background: #1a2226;
 
-/* The background just makes the site look a little dated */
+  /* The background just makes the site look a little dated */
 
-/* background-image: url('img/wallpaper.png');
+  /* background-image: url('img/wallpaper.png');
 background-size: 100% auto;
 background-attachment: fixed;
 background-repeat: no-repeat;
@@ -26,7 +24,7 @@ main {
   width: 100%;
   /* centers container to page */
   margin-inline: auto;
-  
+
   /* adjust to your design */
   max-width: 90em;
   background: #111518;
@@ -62,15 +60,15 @@ a:hover {
 #currentpage {
   font-weight: 400;
   font-size: 1.75em;
-  color: #e9f5ff; 
+  color: #e9f5ff;
   text-shadow:
-  0 0 1px #009dc4,
-  0 0 2px #009dc4,
-  0 0 2px #009dc4,
-  0 0 2px #009dc4,
-  0 0 3px #009dc4,
-  0 0 3px #009dc4,
-  0 0 2px #009dc4;
+    0 0 1px #009dc4,
+    0 0 2px #009dc4,
+    0 0 2px #009dc4,
+    0 0 2px #009dc4,
+    0 0 3px #009dc4,
+    0 0 3px #009dc4,
+    0 0 2px #009dc4;
 
 
 }
@@ -83,8 +81,10 @@ a:hover {
 
 .socials {
   display: flex;
-  align-items: center; /* Vertically aligns social links */
-  margin-left: 1em; /* Space between social links */
+  align-items: center;
+  /* Vertically aligns social links */
+  margin-left: 1em;
+  /* Space between social links */
   color: #f5efff;
   text-decoration: none;
 }
@@ -98,7 +98,7 @@ a:hover {
   align-items: center;
 
   width: 100%;
-  
+
 }
 
 .titlebutton {
@@ -123,70 +123,71 @@ a:hover {
 }
 
 #github {
-  display: inline-block; /* Ensures the link behaves like an image */
-    width: 30px; /* Set to the width of your image */
-    height: 30px; /* Set to the height of your image */
-    background-image: url('/icons/github.svg'); /* Path to your image */
-    background-size: cover; /* Cover the entire area of the link */
-    text-indent: 100%; /* Pushes text out of visible area */
-    white-space: nowrap; /* Prevents text from wrapping */
-    overflow: hidden; /* Hides the text out of the block */
-    filter: invert(1);
-    margin-top: 0.2em;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('/icons/github.svg');
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  filter: invert(1);
+  margin-top: 0.2em;
 }
 
 #linkdin {
-  display: inline-block; /* Ensures the link behaves like an image */
-    width: 30px; /* Set to the width of your image */
-    height: 30px; /* Set to the height of your image */
-    background-image: url('/icons/linkdin.svg'); /* Path to your image */
-    background-size: cover; /* Cover the entire area of the link */
-    text-indent: 100%; /* Pushes text out of visible area */
-    white-space: nowrap; /* Prevents text from wrapping */
-    overflow: hidden; /* Hides the text out of the block */
-    filter: invert(1);
-    margin-top: 0.2em;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('/icons/linkdin.svg');
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  filter: invert(1);
+  margin-top: 0.2em;
 }
 
 #codepen {
-  display: inline-block; /* Ensures the link behaves like an image */
-    width: 30px; /* Set to the width of your image */
-    height: 30px; /* Set to the height of your image */
-    background-image: url('/icons/codepen.svg'); /* Path to your image */
-    background-size: cover; /* Cover the entire area of the link */
-    text-indent: 100%; /* Pushes text out of visible area */
-    white-space: nowrap; /* Prevents text from wrapping */
-    overflow: hidden; /* Hides the text out of the block */
-    filter: invert(1);
-    margin-top: 0.2em;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('/icons/codepen.svg');
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  filter: invert(1);
+  margin-top: 0.2em;
 }
 
 #resume {
   font-weight: 300;
   font-size: 1em;
-	background-color: transparent;
-	border-radius:4em;
-	border:1px solid #767678;
-	/* display:inline-block; */
-	cursor:pointer;
-	color: #dbd9d9;
+  background-color: transparent;
+  border-radius: 4em;
+  border: 1px solid #767678;
+  /* display:inline-block; */
+  cursor: pointer;
+  color: #dbd9d9;
 
-	/* font-size:17px; */
-	padding:0.3em 1em;
-	text-decoration:none;
+  /* font-size:17px; */
+  padding: 0.3em 1em;
+  text-decoration: none;
 
 
   box-shadow: 2px -2px 0.4em #40298c, -2px 2px 0.4em #7b298c;
   box-shadow: 1px -1px 0.15em #3c00ffb6, -1px 1px 0.15em #d400ffb6;
 
 
-  text-shadow: 
-  /* -1px -1px 0 #ffffff50,  
+  text-shadow:
+    /* -1px -1px 0 #ffffff50,  
   1px -1px 0 #ffffff50,
   -1px  1px 0 #ffffff50,
   1px  1px 0 #ffffff50, */
-  0.08em  -0.08em 0 #40298c,
-  -0.05em  0.05em 0 #7b298c; /* Multiple shadows to create outline */
+    0.08em -0.08em 0 #40298c,
+    -0.05em 0.05em 0 #7b298c;
+  /* Multiple shadows to create outline */
 
   z-index: 2;
 }
@@ -210,7 +211,8 @@ a:hover {
   margin-bottom: 0%;
 
 
-  position: relative; z-index: 1;
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -229,15 +231,15 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  
+
   border: 3px solid #ceaaf0;
   /* box-shadow: 
   0 0 1em #7c00c4,
   0 0 6em #7c00c4; */
 
 
-box-shadow: 1.5em -1.5em 4em #0023e654, -1.5em 1.5em 4em #de00e654;
-  
+  box-shadow: 1.5em -1.5em 4em #0023e654, -1.5em 1.5em 4em #de00e654;
+
 }
 
 #miniabout {
@@ -258,17 +260,17 @@ box-shadow: 1.5em -1.5em 4em #0023e654, -1.5em 1.5em 4em #de00e654;
 #miniabout-button {
   font-weight: 500;
   font-size: 0.7em;
-  background:linear-gradient(to bottom, #839cfe 5%, #51619e 100%);
-	background-color:#839cfe;
-	border-radius:4em;
-	border:1px solid #233385;
-	/* display:inline-block; */
-	cursor:pointer;
-	color:#ffffff;
-	/* font-size:17px; */
-	padding:0.7em 1em;
-	text-decoration:none;
-	/* text-shadow:0px 1px 0px #000000; */
+  background: linear-gradient(to bottom, #839cfe 5%, #51619e 100%);
+  background-color: #839cfe;
+  border-radius: 4em;
+  border: 1px solid #233385;
+  /* display:inline-block; */
+  cursor: pointer;
+  color: #ffffff;
+  /* font-size:17px; */
+  padding: 0.7em 1em;
+  text-decoration: none;
+  /* text-shadow:0px 1px 0px #000000; */
 
   position: absolute;
   top: 72%;
@@ -310,7 +312,7 @@ h1 {
   font-size: 3em;
   font-weight: 400;
   text-align: left;
-  color: #ebfcfe; 
+  color: #ebfcfe;
   /* text-transform: uppercase; */
   line-height: 0.9em;
 
@@ -318,7 +320,7 @@ h1 {
   position: absolute;
   top: 20%;
   left: 69.6%;
-  width: 20em;  
+  width: 20em;
 }
 
 /* ======================================== */
@@ -326,7 +328,8 @@ h1 {
 /* ======================================== */
 
 h2 {
-  font-size: 2em;  /* ill adjust this later */
+  font-size: 2em;
+  /* ill adjust this later */
   position: relative;
   top: -2em;
   left: 1em;
@@ -336,13 +339,15 @@ h2 {
 /*                 MOBILE                   */
 /* ======================================== */
 
-
+#mobile-menu-button {
+  display: none;
+}
 
 #mobile-menu-button-open {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background-image: url('/icons/menu.svg'); /* Path to your image */
+  background-image: url('/icons/menu.svg');
   background-size: cover;
   text-indent: 100%;
   white-space: nowrap;
@@ -354,7 +359,7 @@ h2 {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background-image: url('/icons/close-menu.svg'); /* Path to your image */
+  background-image: url('/icons/close-menu.svg');
   background-size: cover;
   text-indent: 100%;
   white-space: nowrap;
@@ -380,15 +385,17 @@ h2 {
   display: none;
 }
 
-#toggle:checked ~ .mobile-menu { /* Changed + to ~ for sibling matching */
+#toggle:checked~.mobile-menu {
+  /* Changed + to ~ for sibling matching */
   display: block;
 }
 
 
 /* This will hide the mini about and h1 when the window gets too narrow */
+/* THIS NEEDS TO REMAIN AT THE END OF THE CSS */
 @media (max-width: 46em) {
   #miniabout {
-    display: none; 
+    display: none;
   }
 
   h1 {
@@ -407,4 +414,7 @@ h2 {
     display: inline-block;
   }
 
+  .titlebutton {
+    font-size: 2em;
+  }
 }
