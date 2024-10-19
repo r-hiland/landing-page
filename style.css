@@ -1,4 +1,7 @@
 /* Have fun. This is your site. */
+#mobile-menu-button {
+  display: none;
+}
 
 HTML body {
 background: #1a2226;
@@ -280,28 +283,7 @@ box-shadow: 1.5em -1.5em 4em #0023e654, -1.5em 1.5em 4em #de00e654;
 }
 
 
-/* This will hide the mini about and h1 when the window gets too narrow */
-@media (max-width: 46em) {
-  #miniabout {
-    display: none; 
-  }
 
-  h1 {
-    display: none;
-  }
-
-  #miniabout-button {
-    display: none;
-  }
-
-  .desktop-view {
-    display: none;
-  }
-
-  .mobile-view {
-    display: block;
-  }
-}
 
 /* h1 {
   font-weight: 400;
@@ -348,4 +330,81 @@ h2 {
   position: relative;
   top: -2em;
   left: 1em;
+}
+
+/* ======================================== */
+/*                 MOBILE                   */
+/* ======================================== */
+
+
+
+#mobile-menu-button-open {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url('/icons/menu.svg'); /* Path to your image */
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+#mobile-menu-button-close {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url('/icons/close-menu.svg'); /* Path to your image */
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked ~ .mobile-menu { /* Changed + to ~ for sibling matching */
+  display: block;
+}
+
+
+/* This will hide the mini about and h1 when the window gets too narrow */
+@media (max-width: 46em) {
+  #miniabout {
+    display: none; 
+  }
+
+  h1 {
+    display: none;
+  }
+
+  #miniabout-button {
+    display: none;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  #mobile-menu-button {
+    display: inline-block;
+  }
+
 }
