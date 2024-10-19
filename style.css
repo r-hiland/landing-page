@@ -39,6 +39,15 @@ main {
   box-shadow: 0 0 0.1em #ff00ea70, 0 0 0.1em #2600ff70;
 }
 
+footer {
+  color: #e9f5ff;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.6em;
+  font-weight: 100;
+
+}
+
 
 a {
   color: #009dc4;
@@ -512,6 +521,19 @@ h2 {
     width: 12em;
   }
 
+  #project-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card {
+    width: 90vw;
+    /* max-width: 30em; */
+  }
+
+  .project-readmore {
+    font-size: 1.5em;
+  }
   
 }
 
