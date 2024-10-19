@@ -1,59 +1,13 @@
 /* Have fun. This is your site. */
 
 HTML body {
-  background: #1f1d18;
+/* background: #1f1d18; */
+background-image: url('img/wallpaper.png');
 
   font-family: "Rajdhani", sans-serif;
   font-weight: 300;
   font-style: normal;
   color: #e9f5ff;
-}
-
-h1 {
-  font-weight: 400;
-  text-align: left;
-  color: #e9f5ff; 
-
-  text-shadow:
-  0 0 1px #009dc4,
-  0 0 2px #009dc4,
-  0 0 2px #009dc4,
-  0 0 2px #009dc4,
-  0 0 3px #009dc4,
-  0 0 3px #009dc4,
-  0 0 2px #009dc4;
-
-
-  padding-top: 0.34em;
-  margin-top: 0;
-
-  text-transform: uppercase;
-
-  
-}
-
-.titlebutton {
-  font-weight: 600;
-  color: #f5efff;
-  font-size: 1em;
-
-
-  /* no underline */
-  text-decoration: none;
-
-
-}
-
-.titlebutton:hover {
-  color: #f5efff;
-  text-shadow:
-  0 0 1px #4500c4,
-  0 0 2px #4500c4,
-  0 0 2px #4500c4,
-  0 0 2px #4500c4,
-  0 0 3px #4500c4,
-  0 0 3px #4500c4,
-  0 0 2px #5900ff;
 }
 
 /* Main Container */
@@ -63,9 +17,86 @@ main {
   margin-inline: auto;
   
   /* adjust to your design */
-  /* max-width: 40em; */
+  max-width: 90em;
+  background: #1f1d18;
+  min-height: 100vh;
+
+  /* shadow */
+  box-shadow: 0 0 1em #000000, 0 0 6em #000000;
+}
+
+
+/* a {
+  color: #f5efff;
+}
+
+a:hover {
+  color: #f5efff;
+  text-shadow:
+  0 0 1px #009dc4,
+  0 0 2px #009dc4,
+  0 0 2px #009dc4,
+  0 0 2px #009dc4,
+  0 0 3px #009dc4,
+  0 0 3px #009dc4,
+  0 0 2px #009dc4;
+} */
+
+
+/* ======================================== */
+/*                TITLE BAR                 */
+/* ======================================== */
+
+.socials-container {
+  margin-left: auto;
+  display: flex;
+  margin-right: 1em;
+}
+
+.socials {
+  display: flex;
+  align-items: center; /* Vertically aligns social links */
+  margin-left: 1em; /* Space between social links */
+  color: #f5efff;
+  text-decoration: none;
+}
+
+.titlebar {
+  height: 4.5em;
+  padding: 0%;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  width: 100%;
+  
+}
+
+.titlebutton {
+  font-weight: 450;
+  color: #f5efff;
+  font-size: 1.25em;
+
+
+  /* no underline */
+  text-decoration: none;
+
+  margin-left: 0.8em;
+
 
 }
+
+.titlebutton:hover {
+  /* underline on hover 3px below it */
+  text-decoration: underline;
+  text-decoration-thickness: 0.1em;
+
+}
+
+/* ======================================== */
+/*                  HERO                    */
+/* ======================================== */
 
 .hero {
   background-color: #0e0e0d;
@@ -77,29 +108,17 @@ main {
   background-position: center;
 
   background-size: cover;
-  height: 20em;
+  height: 28em;
   padding-bottom: 0%;
   margin-bottom: 0%;
 
 
-  position: relative; z-index: -1;
+  position: relative; z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 
 }
-
-.titlebar {
-  height: 3em;
-  padding: 0%;
-
-  display: flex;
-  justify-content: left;
-
-  width: 100%;
-  
-}
-
 
 img {
   border-radius: 50%;
@@ -115,17 +134,43 @@ img {
   0 0 1em #7c00c4,
   0 0 6em #7c00c4; */
 
-/* box shadow with 2px offset to the bottom left */
+
 box-shadow: 1.5em -1.5em 4em #0023e654, -1.5em 1.5em 4em #de00e654;
   
 }
 
-a {
-  color: #f5efff;
+#miniabout {
+  font-weight: 500;
+  font-size: 0.7em;
+  text-align: left;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 20em;
+
+  position: absolute;
+  top: 50%;
+  left: 69.6%;
+  /* transform: translate(-50%, -50%); */
+
 }
 
-a:hover {
-  color: #f5efff;
+
+/* This will hide the mini about and h1 when the window gets too narrow */
+@media (max-width: 46em) {
+  #miniabout {
+    display: none; 
+  }
+
+  h1 {
+    display: none;
+  }
+}
+
+h1 {
+  font-weight: 400;
+  text-align: left;
+  color: #e9f5ff; 
+  text-transform: uppercase;
   text-shadow:
   0 0 1px #009dc4,
   0 0 2px #009dc4,
@@ -134,4 +179,21 @@ a:hover {
   0 0 3px #009dc4,
   0 0 3px #009dc4,
   0 0 2px #009dc4;
+
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  
+}
+
+/* ======================================== */
+/*                CONTENT                   */
+/* ======================================== */
+
+h2 {
+  font-size: 2em;  /* ill adjust this later */
+  position: relative;
+  top: -2em;
+  left: 1em;
 }
