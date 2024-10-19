@@ -1,14 +1,18 @@
 /* Have fun. This is your site. */
 
 HTML body {
-background: #848495;
-background-image: url('img/wallpaper.png');
+background: #1a2226;
+
+/* The background just makes the site look a little dated */
+
+/* background-image: url('img/wallpaper.png');
 background-size: 100% auto;
 background-attachment: fixed;
 background-repeat: no-repeat;
-background-position: bottom;
+background-position: bottom; */
 
-  font-family: "Rajdhani", sans-serif;
+  /* font-family: "Rajdhani", sans-serif; */
+  font-family: Arial;
   font-weight: 300;
   font-style: normal;
   color: #e9f5ff;
@@ -22,11 +26,11 @@ main {
   
   /* adjust to your design */
   max-width: 90em;
-  background: #1f1d18;
+  background: #111518;
   min-height: 100vh;
 
   /* shadow */
-  box-shadow: 0 0 1em #000000, 0 0 6em #000000;
+  box-shadow: 0 0 0.1em #ff00ea70, 0 0 0.1em #2600ff70;
 }
 
 
@@ -50,6 +54,23 @@ a:hover {
 /* ======================================== */
 /*                TITLE BAR                 */
 /* ======================================== */
+
+/* currentpage will probably not be the final solution, more for wireframing */
+#currentpage {
+  font-weight: 400;
+  font-size: 1.75em;
+  color: #e9f5ff; 
+  text-shadow:
+  0 0 1px #009dc4,
+  0 0 2px #009dc4,
+  0 0 2px #009dc4,
+  0 0 2px #009dc4,
+  0 0 3px #009dc4,
+  0 0 3px #009dc4,
+  0 0 2px #009dc4;
+
+
+}
 
 .socials-container {
   margin-left: auto;
@@ -98,6 +119,75 @@ a:hover {
 
 }
 
+#github {
+  display: inline-block; /* Ensures the link behaves like an image */
+    width: 30px; /* Set to the width of your image */
+    height: 30px; /* Set to the height of your image */
+    background-image: url('/icons/github.svg'); /* Path to your image */
+    background-size: cover; /* Cover the entire area of the link */
+    text-indent: 100%; /* Pushes text out of visible area */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides the text out of the block */
+    filter: invert(1);
+    margin-top: 0.2em;
+}
+
+#linkdin {
+  display: inline-block; /* Ensures the link behaves like an image */
+    width: 30px; /* Set to the width of your image */
+    height: 30px; /* Set to the height of your image */
+    background-image: url('/icons/linkdin.svg'); /* Path to your image */
+    background-size: cover; /* Cover the entire area of the link */
+    text-indent: 100%; /* Pushes text out of visible area */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides the text out of the block */
+    filter: invert(1);
+    margin-top: 0.2em;
+}
+
+#codepen {
+  display: inline-block; /* Ensures the link behaves like an image */
+    width: 30px; /* Set to the width of your image */
+    height: 30px; /* Set to the height of your image */
+    background-image: url('/icons/codepen.svg'); /* Path to your image */
+    background-size: cover; /* Cover the entire area of the link */
+    text-indent: 100%; /* Pushes text out of visible area */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides the text out of the block */
+    filter: invert(1);
+    margin-top: 0.2em;
+}
+
+#resume {
+  font-weight: 300;
+  font-size: 1em;
+	background-color: transparent;
+	border-radius:4em;
+	border:1px solid #767678;
+	/* display:inline-block; */
+	cursor:pointer;
+	color: #dbd9d9;
+
+	/* font-size:17px; */
+	padding:0.3em 1em;
+	text-decoration:none;
+
+
+  box-shadow: 2px -2px 0.4em #40298c, -2px 2px 0.4em #7b298c;
+  box-shadow: 1px -1px 0.15em #3c00ffb6, -1px 1px 0.15em #d400ffb6;
+
+
+  text-shadow: 
+  /* -1px -1px 0 #ffffff50,  
+  1px -1px 0 #ffffff50,
+  -1px  1px 0 #ffffff50,
+  1px  1px 0 #ffffff50, */
+  0.08em  -0.08em 0 #40298c,
+  -0.05em  0.05em 0 #7b298c; /* Multiple shadows to create outline */
+
+  z-index: 2;
+}
+
 /* ======================================== */
 /*                  HERO                    */
 /* ======================================== */
@@ -121,6 +211,10 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  box-shadow: inset 0px 26px 20px -20px #7b298c;
+
+  z-index: 1;
 
 }
 
@@ -152,10 +246,37 @@ box-shadow: 1.5em -1.5em 4em #0023e654, -1.5em 1.5em 4em #de00e654;
   width: 20em;
 
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 69.6%;
   /* transform: translate(-50%, -50%); */
 
+}
+
+#miniabout-button {
+  font-weight: 500;
+  font-size: 0.7em;
+  background:linear-gradient(to bottom, #839cfe 5%, #51619e 100%);
+	background-color:#839cfe;
+	border-radius:4em;
+	border:1px solid #233385;
+	/* display:inline-block; */
+	cursor:pointer;
+	color:#ffffff;
+	/* font-size:17px; */
+	padding:0.7em 1em;
+	text-decoration:none;
+	/* text-shadow:0px 1px 0px #000000; */
+
+  position: absolute;
+  top: 72%;
+  left: 69.6%;
+
+  z-index: 2;
+
+}
+
+.mobile-view {
+  display: none;
 }
 
 
@@ -168,9 +289,21 @@ box-shadow: 1.5em -1.5em 4em #0023e654, -1.5em 1.5em 4em #de00e654;
   h1 {
     display: none;
   }
+
+  #miniabout-button {
+    display: none;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+  }
 }
 
-h1 {
+/* h1 {
   font-weight: 400;
   text-align: left;
   color: #e9f5ff; 
@@ -189,6 +322,21 @@ h1 {
   left: 75%;
   transform: translate(-50%, -50%);
   
+} */
+
+h1 {
+  font-size: 3em;
+  font-weight: 400;
+  text-align: left;
+  color: #ebfcfe; 
+  /* text-transform: uppercase; */
+  line-height: 0.9em;
+
+
+  position: absolute;
+  top: 20%;
+  left: 69.6%;
+  width: 20em;  
 }
 
 /* ======================================== */
