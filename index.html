@@ -41,7 +41,7 @@
     <main>
 
         <div class="titlebar">
-
+            <!-- TODO: get rid of repeat -->
             <div class="desktop-view">
                 <a href="https://www.google.com/" class="titlebutton" id="currentpage">Home</a>
                 <a href="https://www.google.com/" class="titlebutton">Projects</a>
@@ -65,33 +65,60 @@
             </div>
             
 
-            <div class="socials-container">
-                <a href="https://github.com/r-hiland"" class="socials" id="github">Github</a>
-                <a href="https://www.linkedin.com/in/wendel-hiland/" class="socials" id="linkdin">Linkdin</a>
-                <a href="https://codepen.io/r-hiland" class="socials" id="codepen">Code Pen</a>
-                <a href="https://www.google.com/" class="socials" id="resume">Résumé</a>
-            </div>
+            <!-- dynamically generate external links from JSON file -->
+            <ul id="myLinks"></ul>
+
         </div>
 
 
 
         <div class="hero">
 
-            <img src="profilepic.jpeg" alt="Itsa me">
+            <img id="profilepic" src="profilepic.jpeg" alt="Itsa me">
             <h1>Hello,<br>I'm Reed</h1>
-            <p id="miniabout">Currently studying at Eastern Washington
-                University, working on a B.S. in Computer
-                Science. My focus is on databases and big
-                data, along with java web development.</p>
+            <p id="miniabout">Currently studying at Eastern Washington University, working on a B.S. in Computer Science. My focus is on databases and big data, along with java web development.</p>
             <a href="https://www.google.com/" id="miniabout-button">Read more about me</a>
         </div>
 
         <h2>Projects</h2>
 
-        <!-- dynamically generate external links from JSON file -->
-        <!-- Would need to mess with the javascript to get these to replace my socials in the titlebar -->
-        <!-- I'll look into it later -->
-        <ul id="myLinks"></ul>
+        <ul id="project-cards">
+            <li class="project-card">
+                <img class="project-card-backdrop" src="/img/projects/noveleaf/screenshot.png" alt="Project 1">
+                <p class="project-card-title">Library Management System - Full Stack Project</p>
+                <p class="project-card-description">
+                    • Developed a web-based library management system using Spring MVC for the backend
+                    and Thymeleaf for the frontend.<br>
+                    • Integrated MySQL to store user profiles, book details, and ratings, managing queries with
+                    both JPL and traditional SQL.<br>
+                    • Utilized external book APIs to fetch and display real-time book data, with objects stored
+                    locally in a MariaDB database.<br>
+                    • Used Maven to build and host the project.<br>
+                    <a href="https://github.com/Sanmeet-EWU/github-teams-project-bid-powerpuf-squirrels/tree/main" class="project-button">Read more</a>
+                </p>
+            </li>
+            <li class="project-card">
+                <img class="project-card-backdrop" src="/img/projects/thissite/screenshot.png" alt="Project 1">
+                <p class="project-card-title">Hiland.dev - This site</p>
+                <p class="project-card-description">
+                    • My content. My design.<br>
+                    • Responsive design for all devices.<br>
+                    • Customizable and persistent URLs<br>
+                    • Portable. Take it to any web host.<br>
+                    • Future proof, and easy to maintain. You own the code via GitHub<br>
+                    • Secure, and scalable to many CDNs worldwide via Netlify, Vercel, etc.<br>
+                    <a href="https://github.com/r-hiland/landing-page" class="project-button">Read more</a>
+                </p>
+            </li>
+            <!-- <li class="project-card">
+                <img class="project-card-backdrop" src="/img/projects/noveleaf/screenshot.png" alt="Project 1">
+                <p class="project-card-title">Project 1</p>
+                <p class="project-card-description">Project 1 description</p>
+                <a href="https://www.google.com/" class="project-button">Read more</a>
+            </li> -->
+        </ul>
+
+
 
 
     

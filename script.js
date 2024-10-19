@@ -11,9 +11,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       const myLinks = document.getElementById('myLinks');
       const fragment = document.createDocumentFragment();
   
+      // data.myLinks.forEach(({ url, name }) => {
+      //   const li = document.createElement('li');
+      //   li.innerHTML = `<a href="${url}" target="_blank">${name}</a>`;
+      //   fragment.appendChild(li);
+      // });
+
       data.myLinks.forEach(({ url, name }) => {
         const li = document.createElement('li');
-        li.innerHTML = `<a href="${url}" target="_blank">${name}</a>`;
+        li.innerHTML = `<a href="${url}" target="_blank" id="${name}">${name}</a>`;
         fragment.appendChild(li);
       });
   
