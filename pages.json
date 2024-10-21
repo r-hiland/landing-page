@@ -6,16 +6,16 @@
     },
     {
     "name": "Projects",
-    "url": "/projects.html"
+    "url": "/projects"
     },
     
     {
     "name": "About Me",
-    "url": "/aboutme.html"
+    "url": "/aboutme"
     },
     {
         "name": "Skills",
-        "url": "/skills.html"
+        "url": "/skills"
     },
     {
         "name": "Contact me",
