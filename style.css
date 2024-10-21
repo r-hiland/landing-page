@@ -225,7 +225,7 @@ a:hover {
   background-position: center;
 
   background-size: cover;
-  height: 28em;
+  height: 12em;
   padding-bottom: 0%;
   margin-bottom: 0%;
 
@@ -244,12 +244,16 @@ a:hover {
 
 }
 
+.frontpage .hero {
+  height: 28em;
+}
+
 
 
 #profilepic {
   border-radius: 50%;
   /* scale: 50%; */
-  width: 17.7em;
+  width: 9em;
 
   display: block;
   margin-left: auto;
@@ -264,6 +268,10 @@ a:hover {
   position: relative;
   box-shadow: 1.5em -1.5em 4em #0023e654, -1.5em 1.5em 4em #de00e654;
 
+}
+
+.frontpage #profilepic {
+  width: 17.7em;
 }
 
 #miniabout {
@@ -297,7 +305,7 @@ a:hover {
   /* text-shadow:0px 1px 0px #000000; */
 
   position: absolute;
-  top: 72%;
+  top: 77%;
   left: 69.6%;
 
   z-index: 2;
@@ -350,6 +358,18 @@ h1 {
 /* ======================================== */
 /*                CONTENT                   */
 /* ======================================== */
+.content {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  position: relative;
+  top: -6em;
+  left: 0em;
+  
+}
 
 h2 {
   font-size: 2em;
@@ -517,9 +537,10 @@ h2 {
 
   .titlebutton {
     font-size: 2em;
+    display: block;
   }
 
- #profilepic {
+ .frontpage #profilepic {
     width: 12em;
   }
 

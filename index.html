@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reed Hiland Landing Page</title>
+    <title>hiland.dev</title>
 
 
 
@@ -40,46 +40,37 @@
 
     <main>
 
-        <div class="titlebar">
-            <!-- TODO: get rid of repeat -->
-            <!-- TODO: populate other pages -->
-            <div class="desktop-view">
-                <a href="/" class="titlebutton" id="currentpage">Home</a>
-                <a href="/" class="titlebutton">Projects</a>
-                <a href="/" class="titlebutton">About me</a>
-                <a href="/" class="titlebutton">Skills</a>
-                <a href="mailto:reed@hiland.dev" class="titlebutton">Contact me</a>
-            </div>
-
-            <div id="mobile-menu-button">
-                <label for="toggle" id="mobile-menu-button-open">Open</label>
-                <input type="checkbox" id="toggle">
-                <div class="mobile-menu" id="mobile-menu">
-                    <label for="toggle" id="mobile-menu-button-close">Close</label>
-                    <a href="/" class="titlebutton" id="currentpage">Home</a><br>
-                    <a href="/" class="titlebutton">Projects</a><br>
-                    <a href="/" class="titlebutton">About me</a><br> 
-                    <a href="/" class="titlebutton">Skills</a><br>
-                    <a href="mailto:reed@hiland.dev" class="titlebutton">Contact me</a>
-
+            <div class="titlebar">
+                <!-- TODO: get rid of repeat -->
+                <div class="desktop-view">
+                    <div class="pages"></div>
                 </div>
+                <div id="mobile-menu-button">
+                    <label for="toggle" id="mobile-menu-button-open">Open</label>
+                    <input type="checkbox" id="toggle">
+                    <div class="mobile-menu" id="mobile-menu">
+                        <label for="toggle" id="mobile-menu-button-close">Close</label>
+                        <div class="pages"></div>
+
+                    </div>
+                </div>
+                <!-- dynamically generate external links from JSON file -->
+                <ul id="myLinks"></ul>
+
             </div>
-            
-
-            <!-- dynamically generate external links from JSON file -->
-            <ul id="myLinks"></ul>
-
-        </div>
 
 
-
+            <div class="frontpage">
         <div class="hero">
 
             <img id="profilepic" src="profilepic.jpeg" alt="Itsa me">
             <h1>Hello,<br>I'm Reed</h1>
-            <p id="miniabout">Currently studying at Eastern Washington University, working on a B.S. in Computer Science. My focus is on databases and big data, along with java web development.</p>
-            <a href="https://www.google.com/" id="miniabout-button">Read more about me</a>
+            <p id="miniabout">Hi there! I'm a software engineering student at Eastern Washington University, with
+                experience in full stack web development and embedded programming. My main interests lie in back-end
+                development...</p>
+            <a href="/aboutme.html" id="miniabout-button">Read more about me</a>
         </div>
+    </div>
 
         <h2>Projects</h2>
 
@@ -95,7 +86,8 @@
                     • Utilized external book APIs to fetch and display real-time book data, with objects stored
                     locally in a MariaDB database.<br>
                     • Used Maven to build and host the project.<br>
-                    <a href="https://github.com/Sanmeet-EWU/github-teams-project-bid-powerpuf-squirrels/tree/main" class="project-readmore">Read more</a>
+                    <a href="https://github.com/Sanmeet-EWU/github-teams-project-bid-powerpuf-squirrels/tree/main"
+                        class="project-readmore">Read more</a>
                 </p>
             </li>
             <li class="project-card">
@@ -115,7 +107,8 @@
                 <img class="project-card-backdrop" src="/img/projects/seniorproject/coding.jpg" alt="Project 1">
                 <p class="project-card-title">Senior Project</p>
                 <p class="project-card-description">
-                    Senior project will be starting in winter 2025, and will conclude in the spring. Check back for more details about my progress!
+                    Senior project will be starting in winter 2025, and will conclude in the spring. Check back for more
+                    details about my progress!
                     <a href="https://github.com/r-hiland/landing-page" class="project-readmore">Read more</a>
                 </p>
             </li>
@@ -124,7 +117,7 @@
 
 
 
-    
+
 
     </main>
 
