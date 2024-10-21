@@ -28,11 +28,13 @@
 
     <!-- JavaScript -->
     <script src="script.js" defer></script>
+    <script src="projects.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="projects.css">
 
 </head>
 
@@ -68,10 +70,38 @@
         </div>
 
         <h2>Projects</h2>
+        <div class="content">
+
+            <div class="filter-section">
+                <p>Filter by tag:</p>
+                <ul id="tag-list">
+                    <li data-tag="all" class="active">All</li>
+                    <li data-tag="Java">Java</li>
+                    <li data-tag="C">C</li>
+                    <!-- Add more tags as needed -->
+                </ul>
+            </div>
+
+            <div id="project-list">
+                <div class="project" data-tags="Java">
+                    <h2>Project 1</h2>
+                    <p>project using java. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore praesentium eaque illo, enim aut ratione! Ratione laudantium harum voluptatibus quos. Dolorem ducimus voluptas cum earum nemo voluptatibus nulla exercitationem eos!</p>
+                </div>
+
+                <div class="project" data-tags="Java C">
+                    <h2>Project 2</h2>
+                    <p>Project using Java and C</p>
+                </div>
+
+                <div class="project" data-tags="C">
+                    <h2>Project 3</h2>
+                    <p>Project using C</p>
+                </div>
+
+            </div>
 
 
-
-
+        </div>
 
 
 

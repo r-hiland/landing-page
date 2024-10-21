@@ -1,0 +1,45 @@
+.filter-section {
+    margin-bottom: 20px;
+}
+
+#tag-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+#tag-list li {
+    /* background-color: #ddd; */
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* transition: background-color 0.3s; */
+}
+
+#tag-list li:hover {
+    /* background-color: #bbb; */
+}
+
+#tag-list li.active {
+    background-color: #007bff;
+    /* color: white; */
+}
+
+#project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    /* background-color: #fff; */
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project h2 {
+    margin: 0;
+    font-size: 24px;
+}
