@@ -12,13 +12,15 @@
 #tag-list li {
     /* background-color: #ddd; */
     padding: 5px 10px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     cursor: pointer;
     /* transition: background-color 0.3s; */
+
+
 }
 
 #tag-list li:hover {
-    /* background-color: #bbb; */
+    background-color: #bbb;
 }
 
 #tag-list li.active {
@@ -35,11 +37,33 @@
     /* background-color: #fff; */
     padding: 15px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 5px;
 }
 
-.project h2 {
+.project h3 {
+
     margin: 0;
     font-size: 24px;
+}
+
+.project::after {
+    all: revert;
+    content: '';
+    display: block;
+    height: 0.1em;
+    background-color: #aaddff;
+    margin-top: 0.2em;
+    box-shadow:
+        0 0 1px #009dc4,
+        0 0 2px #009dc4,
+        0 0 2px #009dc4,
+        0 0 2px #009dc4,
+        0 0 3px #009dc4,
+        0 0 3px #009dc4,
+        0 0 2px #009dc4;
+}
+
+.project:hover {
+    background-color: #f0f0f01e;
 }
