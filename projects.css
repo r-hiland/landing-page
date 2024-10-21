@@ -1,3 +1,11 @@
+#project-list a {
+    all: revert;
+
+    color: inherit;
+    text-decoration: none;
+    z-index: 1;
+}
+
 .filter-section {
     margin-bottom: 20px;
 }
@@ -39,6 +47,9 @@
     margin-bottom: 15px;
     /* border: 1px solid #ddd; */
     border-radius: 5px;
+
+    width: 86em;
+    max-width: 92.5vw;
 }
 
 .project h3 {
@@ -51,19 +62,120 @@
     all: revert;
     content: '';
     display: block;
-    height: 0.1em;
-    background-color: #aaddff;
+    height: 0.01em;
+    background-color: #009dc4;
     margin-top: 0.2em;
-    box-shadow:
+    /* box-shadow:
         0 0 1px #009dc4,
         0 0 2px #009dc4,
         0 0 2px #009dc4,
         0 0 2px #009dc4,
         0 0 3px #009dc4,
         0 0 3px #009dc4,
-        0 0 2px #009dc4;
+        0 0 2px #009dc4; */
+
+    position: relative;
+    top: 1.5em;
 }
 
 .project:hover {
-    background-color: #f0f0f01e;
+    /* background-color: #f0f0f00a; */
+    /* box-shadow: rgb(123, 41, 140) 0px 26px 20px -20px inset, 
+    rgb(17, 21, 24) 0px -230px 50px -200px inset, 
+    rgb(17, 21, 24) 0px -230px 50px -200px inset; */
+
+
+    box-shadow: inset 1.5em -1.5em 4em #ffffff0a, inset -1.5em 1.5em 4em #ffffff0a;
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+.project img {
+    /* set so that text will display on the right of the image */
+    float: left;
+    margin-right: 10px;
+
+    /* cover the image inside a 10x10em */
+    width: 11.2em;
+    height: 6.3em;
+
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.project #tag-list li {
+    color: rgb(134, 134, 134);
+    font-weight: 900;
+    font-size: 0.7em;
+    padding: 0.1em 0.5em;
+
+    margin-left: -0.45em;
+    margin-right: -0.4em;
+
+    z-index: 3;
+}
+
+#tag-list li:hover {
+    background-color: #bbbbbb33;
+    z-index: 3;
+
+    
+}
+
+.project #tag-list li.active {
+    background-color: transparent;
+}
+
+@media (max-width: 46em) {
+    .project p {
+        display: none;
+    }
+
+    .project img {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/3;
+        max-width: 100vw;;
+    }
+
+    .project h3 {
+        max-height: 1.5em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .project #tag-list li {
+        /* font-size: 1em;
+        min-width: fit-content;
+        margin-bottom: -0.2em; */
+        display: none;
+    }
+
+    .project {
+        max-width: 100vw;
+        overflow: hidden;
+        text-overflow: wrap;
+
+        width: auto;
+        max-width: auto;
+    }
+
+    .project #tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100vw;
+        margin-left: 0em;
+    }
+
+    #project-list {
+        width: 99vw;
+    }
+
+    .project::after {
+        height: 0.6em;
+    }
+
 }
